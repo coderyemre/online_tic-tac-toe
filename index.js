@@ -35,13 +35,13 @@ function kontrol() {
           if(kareler3[a][0]==kareler3[a][1] && kareler3[a][1]==kareler3[a][2]){
             if (kareler3[a][0]=="X") {
               document.getElementById('table').style.display="none";
-              document.getElementById('message').innerHTML="Kazandın";
-              console.log("Kazandın");
+              document.getElementById('message').innerHTML="You Win";
+              console.log("You Win");
             }
             else if (kareler3[a][0]=="O") {
               document.getElementById('table').style.display="none";
-              document.getElementById('message').innerHTML="Kaybettin";
-              console.log("Kaybettin");
+              document.getElementById('message').innerHTML="You Lose";
+              console.log("You Lose");
             }
           }
         }
@@ -49,38 +49,38 @@ function kontrol() {
           if(kareler3[0][a]==kareler3[1][a] && kareler3[1][a]==kareler3[2][a]){
             if (kareler3[0][a]=="X") {
               document.getElementById('table').style.display="none";
-              document.getElementById('message').innerHTML="Kazandın";
-              console.log("Kazandın");
+              document.getElementById('message').innerHTML="You Win";
+              console.log("You Win");
             }
             else if (kareler3[0][a]=="O") {
               document.getElementById('table').style.display="none";
-              document.getElementById('message').innerHTML="Kaybettin";
-              console.log("Kaybettin");
+              document.getElementById('message').innerHTML="You Lose";
+              console.log("You Lose");
             }
           }
         }
         if(kareler3[0][0]==kareler3[1][1] && kareler3[1][1]==kareler3[2][2]){
           if (kareler3[0][0]=="X") {
             document.getElementById('table').style.display="none";
-            document.getElementById('message').innerHTML="Kazandın";
-            console.log("Kazandın");
+            document.getElementById('message').innerHTML="You Win";
+            console.log("You Win");
           }
           else if (kareler3[0][0]=="O") {
             document.getElementById('table').style.display="none";
-            document.getElementById('message').innerHTML="Kazandın";
-            console.log("Kazandın");
+            document.getElementById('message').innerHTML="You Win";
+            console.log("You Win");
           }
         }
         else if (kareler3[0][2]==kareler3[1][1] && kareler3[1][1]==kareler3[2][0]) {
           if (kareler3[0][2]=="X") {
             document.getElementById('table').style.display="none";
-            document.getElementById('message').innerHTML="Kazandın";
-            console.log("Kazandın");
+            document.getElementById('message').innerHTML="You Win";
+            console.log("You Win");
           }
           else if (kareler3[0][2]=="O") {
             document.getElementById('table').style.display="none";
-            document.getElementById('message').innerHTML="Kaybettin";
-            console.log("Kaybettin");
+            document.getElementById('message').innerHTML="You Lose";
+            console.log("You Lose");
           }
         }
 
@@ -89,7 +89,7 @@ function isaret(x) {
       if(sira && x.innerHTML=="-"){
         x.innerHTML="X";
         kontrol();
-        document.getElementById('message').innerHTML="Sıra Onda";
+        //document.getElementById('message').innerHTML="Sıra Onda";
         sira=false;
         var i=true;
         if(sayac<4){
@@ -99,7 +99,7 @@ function isaret(x) {
                   kare=document.getElementById(String(sayi)).innerHTML;
                   if (kare=="-") {
                         hamle=document.getElementById(String(sayi)).innerHTML="O";
-                        document.getElementById('message').innerHTML="Sıra Sende";
+                        document.getElementById('message').innerHTML="Your Turn";
                         i=false;
 
                   }
