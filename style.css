@@ -1,0 +1,46 @@
+.table{
+  padding: 50px;
+  margin:80px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 250px;
+
+}
+.c1,.c2,.c3{
+    display:inline-block;
+
+}
+h1{
+  width: 30px;
+  height: 60px;
+  margin: 10px;
+  padding: 14px;
+  position: relative 0px;
+  
+}
+h2{
+  text-align: center;
+  font-size: 40px;
+}
+h1:hover{
+  background-color: cyan;
+}
+.l1,.l2{
+  border-width: medium;
+  border-bottom: solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+.l1 .c1,.c2{
+  border-width: medium;
+  border-right: solid;
+}
+.l2 .c1,.c2{
+  border-width: medium;
+  border-right: solid;
+}
+.l3 .c1,.c2{
+  border-width: medium;
+  border-right: solid;
+}
